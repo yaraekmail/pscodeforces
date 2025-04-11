@@ -1,0 +1,17 @@
+
+#include<iostream>
+using namespace std;
+int main(){
+	
+	char x;
+	cin>>x;
+	if(int(x)>=65&&int(x)<=90){
+	x=char(int(x)+32);
+		cout<<x;
+	}
+	else{
+	x=	char(int(x)-32);
+		cout<<x;
+	}
+	return 0;
+}

@@ -1,0 +1,11 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+	
+ cout << fixed << setprecision(9);
+	double x;
+	cin>>x;
+	cout<<x*x* 3.141592653;
+	return 0;
+}

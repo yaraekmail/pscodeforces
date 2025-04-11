@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int x,y;
+	char q;
+	cin>>x>>q>>y;
+	if(q=='>'){
+		if(x>y)
+		cout<<"Right";
+		else
+		cout<<"Wrong";
+	}
+	 	else if(q=='<'){
+		if(x<y)
+		cout<<"Right";
+		else 
+		cout<<"Wrong";
+	}
+ 	 else if(q=='='){
+		if(x==y)
+		cout<<"Right";
+		else
+		cout<<"Wrong";
+	}
+	return 0;
+}

@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+int x,a,b,c;
+ cin>>x;
+a=x/365;
+cout<<a<<" years"<<endl;
+x-=(365*a);
+b=x/30;
+cout<<b<<" months"<<endl;
+x-=(30*b);
+c=x/1;
+cout<<c<<" days"<<endl;
+	return 0;
+}

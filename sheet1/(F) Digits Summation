@@ -1,0 +1,11 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+long long  n,m;
+int sum;
+cin>>n>>m;
+sum=int((n%10))+int((m%10));
+cout<<sum;
+	
+}

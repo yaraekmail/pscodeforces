@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+ 
+long long a,b,c;
+long long mx , mn;
+ 
+cin>>a>>b>>c;
+ 
+if(a<=b && a<=c)
+mn=a;
+ 
+else if(b<=a && b<=c)
+mn=b;
+ 
+else if(c<=a && c<=b)
+mn=c;
+ 
+ 
+if(a>=b && a>=c)
+mx=a;
+ 
+else if(b>=a && b>=c)
+mx=b;
+ 
+else if(c>=a && c>=b)
+mx=c;
+ 
+cout<<mn<<" "<<mx;
+ 
+ 
+	cout << endl;
+	return 0;
+}
