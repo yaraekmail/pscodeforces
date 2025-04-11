@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int sum(int y)
+{
+    int i;
+    for (i = 1; i <= y; i++){ 
+        cout << i;
+    if (i < y)
+        cout << " ";}
+}
+int main()
+{
+    int y;
+    cin >> y;
+    sum(y);
+}
