@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+ 
+int main() {
+int s;
+cin>>s;
+for(int i=2;i<s;i++){
+if(s%i==0){
+ 
+ 
+cout<<"NO";
+return 0;}
+}
+cout<<"YES";
+}
