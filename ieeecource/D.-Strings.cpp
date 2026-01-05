@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    string a, b, a1, b1;
+
+    cin >> a;
+    cin >> b;
+    cout << (a.size()) << " " << (b.size()) << endl;
+    cout << a + b << endl;
+    a1 = b[0];
+    b1 = a[0];
+    a.erase(0, 1);
+    b.erase(0, 1);
+    cout << a1 + a + " " + b1 + b;
+    return 0;
+}

@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    const int w = 1e5 + 5;
+    int n, a[w], g, q = -1;
+    cin >> n;
+    cout << " ";
+    for (int i = 0; i < n; i++)
+        cin >> a[i];
+
+    cin >> g;
+    for (int k = 0; k < n; k++)
+    {
+        if (a[k] == g)
+        {
+            q = k;
+            break;
+        }
+    }
+    cout << q;
+}
