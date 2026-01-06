@@ -1,0 +1,22 @@
+https://codeforces.com/group/MWSDmqGsZm/contest/223338/problem/A
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+   long long n;
+    cin >> n;
+
+    while (n > 1)
+    {
+        if (n % 2 != 0)
+        {
+            cout << "NO";
+            return 0;
+        }
+        n /= 2;
+    }
+
+    cout << "YES";
+    return 0;
+}
