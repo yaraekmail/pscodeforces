@@ -1,0 +1,26 @@
+https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/R
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    bool f = true;
+    while (f)
+    {
+        int x, y, c1 = 0;
+        cin >> x >> y;
+        if (x <= 0 || y <= 0)
+            return 0;
+        for (int i = min(x, y); i <= max(x, y); i++)
+        {
+            cout << i << " ";
+            c1 += i;
+        }
+        cout << "sum" << " " << "=" << c1 << endl;
+    }
+ 
+    return 0;
+}
