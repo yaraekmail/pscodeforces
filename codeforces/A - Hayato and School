@@ -1,0 +1,77 @@
+https://codeforces.com/contest/1780/problem/A
+
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int a, sum = 0, ce = 0, no = 0, f = -1, g = -1, k = 0;
+        cin >> a;
+        vector<int> q(a);
+        for (int i = 0; i < a; i++)
+        {
+            cin >> q[i];
+            sum += q[i];
+            if (q[i] % 2 == 0)
+            {
+                ce++;
+                if (f == -1)
+                    f = i + 1;
+                else if (g == -1)
+                    g = i + 1;
+            }
+            else
+                no++;
+        }
+        for (int i = 0; i < a; i++)
+        {
+            if (i + 1 == f || i + 1 == g)
+                continue;
+            if (q[i] % 2 != 0)
+            {
+                k = i + 1;
+                break;
+            }
+        }
+ 
+        if (ce == a)
+            cout << "NO" << endl;
+        else if (no >= 3 || (ce >= 2 && no >= 1))
+ 
+        {
+            cout << "YES" << endl;
+            {
+                if (no >= 3)
+                {
+                    int cnt = 0;
+                    for (int i = 0; i < a && cnt < 3; i++)
+                    {
+                        if (q[i] % 2 != 0)
+                        {
+                            cout << i + 1 << " ";
+                            cnt++;
+                        }
+                    }
+                    cout << endl;
+                }
+                else
+                {
+ 
+                    cout << f << " " << g << " " << k << endl;
+                }
+            }
+        }
+ 
+        else
+            cout << "NO" << endl;
+    }
+ 
+    return 0;
+}
