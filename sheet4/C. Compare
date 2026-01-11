@@ -1,0 +1,29 @@
+https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/C
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    string a, b;
+    cin >> a >> b;
+    for (int i = 0; i < max(a.size(), b.size()); i++)
+    {
+        if (int(a[i]) < int(b[i]))
+        {
+            cout << a;
+              return 0;
+        }
+        else if (int(a[i]) > int(b[i]))
+        {
+            cout << b;
+             return 0;
+        }
+    }
+    cout<<a;
+
+    return 0;
+}
